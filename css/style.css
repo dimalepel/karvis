@@ -148,7 +148,7 @@ img {
   min-width: 490px;
   min-height: 840px;
 }
-.about__picture > img {
+.about__picture img {
   display: block;
   width: 872px;
   height: 840px;
