@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=980, user-scalable=yes">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>RU | BUSINESS NAME</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,17 +14,26 @@
         <a class="logo__wrapper">
           <img class="logo" src="img/logo.webp" alt="">
         </a>
-        <ul class="interpreter">
-          <li class="interpreter__item">
-            <a href="index.html">ENG</a>
-          </li>
-          <li class="interpreter__item">
-            <a href="home-copy.html">LV</a>
-          </li>
-          <li class="interpreter__item">
-            <a href="karvis-lv-copy.html">RU</a>
-          </li>
-        </ul>
+        <button id="open-menu" class="menu-trigger" type="button">
+          <div class="menu-trigger__inner">
+            <span class="menu-trigger__line"></span>
+            <span class="menu-trigger__line"></span>
+            <span class="menu-trigger__line"></span>
+          </div>
+        </button>
+        <div id="interpreter-wrapper" class="interpreter__wrapper">
+          <ul class="interpreter">
+            <li class="interpreter__item">
+              <a href="index.html">ENG</a>
+            </li>
+            <li class="interpreter__item">
+              <a href="home-copy.html">LV</a>
+            </li>
+            <li class="interpreter__item">
+              <a href="karvis-lv-copy.html">RU</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -33,7 +42,12 @@
     <div class="container">
       
       <div class="promo">
-        <img class="promo__picture" src="img/promo.webp" alt="">
+        <div class="promo__picture">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/promo-mob.webp">
+            <img src="img/promo.webp" alt="">
+          </picture>
+        </div>
         <div class="promo__grid">
           <h1 class="promo__title">YOUR BUSINESS, YOUR WAY</h1>
         </div>
@@ -41,7 +55,10 @@
       
       <div class="about">
         <div class="about__picture">
-          <img src="img/about.webp" alt="">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/about-mob.webp">
+            <img src="img/about.webp" alt="">
+          </picture>
         </div>
         <div class="about__content">
           <h2>О НАС</h2>
@@ -60,7 +77,10 @@
         <div class="car__wrapper">
           <div class="car">
             <div class="car__picture">
-              <img src="img/car-1.webp" alt="">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/car-1-mob.webp">
+                <img src="img/car-1.webp" alt="">
+              </picture>
             </div>
             <div class="car__content">
               <h3>HYUNDAI SANTA FE</h3>
@@ -89,12 +109,18 @@
               <p><span>Стоимость:</span> 45 EUR в день</p>
             </div>
             <div class="car__picture">
-              <img src="img/car-2.webp" alt="">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/car-2-mob.webp">
+                <img src="img/car-2.webp" alt="">
+              </picture>
             </div>
           </div>
           <div class="car">
             <div class="car__picture">
-              <img src="img/car-3.webp" alt="">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/car-3-mob.webp">
+                <img src="img/car-3.webp" alt="">
+              </picture>
             </div>
             <div class="car__content">
               <h3>BMW X6</h3>
@@ -127,5 +153,7 @@
   <footer class="page-footer">
     <p>©2019 by karvis</p>
   </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
