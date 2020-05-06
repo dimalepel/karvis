@@ -24,6 +24,11 @@ img {
   margin: 0 auto;
 }
 
+.page-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .page-header {
   position: fixed;
   left: 0;
@@ -483,7 +488,7 @@ img {
     min-width: 0;
     min-height: auto;
   }
-  .about__picture > img {
+  .about__picture img {
     width: 100%;
     height: 240px;
   }
